@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../Icons/favicon-16x16.png" type="image/png">  
+    <title>Picnic-Games| Kids Outdoor Games</title>
+    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="stylesheet" href="../Style/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../Script/jquery.slim.min.js"></script>
+    <script src="../Script/popper.min.js"></script>
+    <script src="../Script/bootstrap.bundle.min.js"></script>
+    <script src="../Script/jquery.min.js"></script> 
+    <link href="https://vjs.zencdn.net/4.0.4/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/4.0.4/video.js"></script>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: #a2a787; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px; color: #42573f;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../Images/soccer-parallax-out.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../Images/Tag-game-parallax.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../Images/Hopscotch-Parallax.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-four {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(../Images/sack-race-parallax.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+    </style>
+</head>
+<body style="background-color: #a2a787;">
+    <!-- Header-Section-1-Start -->
+    <nav class="navbar navbar-expand-sm" style="background-color: #a2a787; height: 70px;">
+        <a class="navbar-brand" href="../index.html"><img src="../Images/WEB-LOGO.png" alt="Not Found" height="70px" width="200px"></a>
+        
+    </nav>
+    <!-- Header-Section-1-End -->
+    <!-- Header-Section-2-Navbar-Start -->
+    <nav class="navbar sticky-top navbar-expand-sm " style="background-color: #42573f;">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation" style="background-color: #57443e;">
+            <span style="height: 0.1%; color:#7e904b;" class="navbar-toggler-icon fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="height: 50px;">
+                <li class="nav-item active">
+                    <a class="nav-link mt-1" href="../index.html" style="color: #a2a787; margin-left: 6px;"><img src="../Icons/icons8-tent-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>Home</b></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-basket-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>CATEGORIES</b></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; width: 450px; background-color: #42573f;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                                    <ul style="list-style: none; text-align: center;">
+                                        <li><a href="../Pages/Indoor-Games.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Indoor<span style="color: #6b766b;">GAMES</span></h4></a></li>
+                                        <li><a href="../Pages/Kids-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Kids &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a href="../Pages/Men-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Men &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a href="../Pages/Women-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp; Women &nbsp;</a></li>
+                                        <li><a href="../Pages/Family-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Family&nbsp;&nbsp;&nbsp;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                                    <ul style="list-style: none; text-align: center;">
+                                            <li><a href="../Pages/Outdoor-Games.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Outdoor<span style="color: #6b766b;">GAMES</span></h4></a></li>
+                                            <li><a href="../Pages/Kids-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Kids &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                            <li><a href="../Pages/Men-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Men &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                            <li><a href="../Pages/Women-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp; Women &nbsp;</a></li>
+                                            <li><a href="../Pages/Family-Oudoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Family&nbsp;&nbsp;&nbsp;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                                    <ul style="list-style: none; text-align: center;">
+                                        <li><a href="../Pages/Picnic-Getaways.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Picnic<span style="color: #6b766b;">LIFE</span></h4></a></li>
+                                        <li><a href="../Pages/Indoor-Picnic.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Indoor&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a href="../Pages/Outdoor-Picnic.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Outdoor&nbsp;&nbsp;&nbsp;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-communication-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>CONTACT US</b></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; background-color: #42573f;">
+                        <a class="dropdown-item" href="../Pages/Contactus.html" target="_blank">Our Location</a>
+                        <a class="dropdown-item" href="../Pages/Contactus.html" target="_blank">Send A Message</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-group-40.png" alt="Not Found" id="nav-img4"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>ABOUT US</b></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; background-color: #42573f;">
+                        <a class="dropdown-item" href="../Pages/History.html">History</a>
+                        <a class="dropdown-item" href="../Pages/Aboutus.html">Our Team</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link mt-1" href="../Pages/Review.html" style="color: #a2a787; margin-left: 6px;"><img src="../Icons/icons8-review-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>REVIEWS</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header-Section-2-Navbar-End -->
+    <div id="parallax-world-of-ugg">
+  
+        <section>
+          <div class="title">
+            
+            <h1 style="margin-left: 10px;">Kids OutDoor Games</h1>
+            <hr style="width: 35vw; background: #57443e; height: 2px;">
+           
+          </div>
+        </section>
+        
+        <section>
+            <div class="parallax-one">
+                <div class="container " >
+                    <h3 style="text-align: center; margin-bottom: 50px; padding-top: 50px; color: #a2a787; font-size: 30px;"> <strong> Soccer <hr style="border: 2px #42573f solid; width: 170px; border-radius: 5px; "></strong></h3>
+                    
+                    <div class="row " style="background-color: #42573f; box-shadow: 15px 25px 30px rgba(0, 0, 0, 0.8); ">
+                    
+                    
+                
+                        <div class="col-md-6  " style="  height: 40%;color: #7e904b;">
+                            <p style="font-family: sans-serif; font-size: 16px; text-align: center; ">
+                                football, also called association football or soccer, game in which two teams of 11 players, using any part of their bodies except their hands and arms, try to maneuver the ball into the opposing team’s goal. Only the goalkeeper is permitted to handle the ball and may do so only within the penalty area surrounding the goal. The team that scores more goals wins.
+                                Football is the world’s most popular ball game in numbers of participants and spectators. Simple in its principal rules and essential equipment, the sport can be played almost anywhere, from official football playing fields (pitches) to gymnasiums, streets, school playgrounds, parks, or beaches. Football’s governing body, the Fédération Internationale de Football Association (FIFA), estimated that at the turn of the 21st century there were approximately 250 million football players and over 1.3 billion people “interested” in football; in 2010 a combined television audience of more than 26 billion watched football’s premier tournament, the quadrennial month-long World Cup finals.
+                        
+                            </p>
+                        </div>
+                            
+                            
+                    
+                    <div class="col-md-6  ">
+                        <img src="../Images/soccer-img.jpg" alt=""  width="100%" height="100%" style="border: solid 1px #57443e; margin-left: 2vw; ">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container-fluid " style="margin-top: 100px;" >
+            
+                <div class="col-md-12" style="text-align: center;" >
+                    <h3 style="text-align: center; color: #57443e; font-size: 25px; margin-left: 10px;" >Soccer Tutorial</h3>
+                    <hr style="background: #42573f; width: 25vw; height: 2px;">
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="col-md-12" style="text-align: center;" >
+                    <iframe width="430px" height="315" src="https://www.youtube.com/embed/1vNmYNH8d4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div style="text-align: center; margin-top: 5vw;">
+                    <button style=" background-color: #42573f; margin-bottom: 5vw;" class="custom-btn btn-5"><a href="../PDF/LEGO.pdf" target="_blank" style="text-decoration: none;width: auto; height: auto;  color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-pdf-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+                    &nbsp;&nbsp;&nbsp;<button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Pages/Login.html" style="text-decoration: none;width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; SELECT <img src="../Icons/icons8-cursor-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+                    &nbsp;&nbsp;&nbsp;<span><button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Word/LEGO.docx" target="_blank" style="text-decoration: none; width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-microsoft-word-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button></span>
+                </div>
+        </section>
+        
+        <section>
+          <div class="parallax-two">
+            <div class="container " >
+                <h3 style="text-align: center; margin-bottom: 50px; padding-top: 50px; color: #57443e; font-size: 30px; "> <strong> Tag Game <hr style="border: 2px #42573f solid; width: 200px; border-radius: 5px; "></strong></h3>
+                
+                <div class="row " style="background-color: #57443e; box-shadow: 15px 25px 30px rgba(0, 0, 0, 0.8); ">
+                
+            
+                    <div class="col-md-6  ">
+                        <img src="../Images/tag1.jpg" alt=""  width="100%" height="100%" style="border: solid 1px #57443e;margin-left: -1vw; ">
+                    </div>
+                
+            
+                    <div class="col-md-6  " style="  height: 40%;color: #7e904b;">
+                        <p style="font-family: sans-serif; font-size: 16px; text-align: center; " class="mb-3 mt-3">Players (two or more) decide who is going to be "it", often using a counting-out game such as eeny, meeny, miny, moe. The player selected to be "it" then chases the others, attempting to "tag" one of them (by touching them with a hand) as the others try to avoid being tagged. A tag makes the tagged player "it". In some variations, the previous "it" is no longer "it" and the game can continue indefinitely, while in others, both players remain "it" and the game ends when all players have become "it".
+            
+                            Many variants modify the rules for team play or place restrictions on tagged players' behavior. A simple variation makes tag an elimination game, so that tagged drop out of play. Some variants have a rule preventing a player from tagging the person who has just tagged them (known as "no tag-backs", "no catch-backs", "no returns", "can't tag your master" or "can't get the butcher back")
+                        
+                        </p>
+                    </div>
+                        
+                        
+                
+               
+            </div>
+                </div>
+          </div>
+        </section>
+        
+        <section>
+            <div class="container-fluid " style="margin-top: 100px;" >
+            
+                <div class="col-md-12" style="text-align: center;" >
+                    <h3 style="text-align: center; color: #57443e; font-size: 25px; margin-left :10px ;" class="mt-4">Tag Tutorial</h3>
+                    <hr style="border: 1px #42573f solid; width: 250px; border-radius: 5px; ">
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="col-md-12" style="text-align: center;" >
+                    <iframe width="430px" height="315" src="https://www.youtube.com/embed/qT5msWW3Wts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 5vw;">
+                <button style=" background-color: #42573f; margin-bottom: 5vw;" class="custom-btn btn-5"><a href="../PDF/LEGO.pdf" target="_blank" style="text-decoration: none;width: auto; height: auto;  color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-pdf-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+                &nbsp;&nbsp;&nbsp;<button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Pages/Login.html" style="text-decoration: none;width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; SELECT <img src="../Icons/icons8-cursor-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+                &nbsp;&nbsp;&nbsp;<span><button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Word/LEGO.docx" target="_blank" style="text-decoration: none; width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-microsoft-word-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button></span>
+            </div>
+        </section>
+        
+        <section>
+          <div class="parallax-three">
+            <div class="container " >
+                <h3 style="text-align: center; margin-bottom: 50px; padding-top: 50px; color: #a2a787; font-size: 30px; "> <strong> Hopscotch Game <hr style="border: 2px #42573f solid; width: 350px; border-radius: 5px; "></strong></h3>
+                
+                <div class="row " style="background-color: #42573f; box-shadow: 15px 25px 30px rgba(0, 0, 0, 0.8); ">
+                
+                
+            
+                    <div class="col-md-6  " style="  height: 40%;color: #7e904b;">
+                        <p style="font-family: sans-serif; font-size: 16px; text-align: center; " class="mb-3 mt-3">To play hopscotch, a court is first laid out on the ground. Depending on the available surface, the court is either scratched out in the dirt or drawn with chalk on pavement. Courts may be permanently marked where playgrounds are commonly paved, as in elementary schools. Designs vary, but the court is usually composed of a series of linear squares interspersed with blocks of two lateral squares. Traditionally the court ends with a "safe" or "home" base in which the player may turn before completing the reverse trip. The home base may be a square, a rectangle, or a semicircle. The squares are then numbered in the sequence in which they are to be hopped.
+                            The first player tosses a marker, also called a "lucky bean", onto the court. The marker (typically a small stone, coin, bean bag, or small chain with a charm) should land in the square without bouncing, sliding, or rolling out. (In Ireland, the marker is usually replaced with an old shoe polish tin or flat stone,
+                        </p>
+                    </div>
+                        
+                        
+                
+                <div class="col-md-6  ">
+                    <img src="../Images/hopscotch.jpg" alt="" class="ml-3" width="100%" height="100%" style="border: solid 1px #57443e; ">
+                </div>
+            </div>
+                </div>
+          </div>
+        </section>
+        
+        <section>
+            <section>
+                <div class="container-fluid " style="margin-top: 100px;" >
+                
+                    <div class="col-md-12" style="text-align: center;" >
+                        <h3 style="text-align: center; color: #57443e; font-size: 25px; margin-left :10px ;" class="mt-4">Hopscotch Tutorial</h3>
+                        <hr style="border: 1px #42573f solid; width: 350px; border-radius: 5px; ">
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="col-md-12" style="text-align: center;" >
+                        <iframe width="430px" height="315" src="https://www.youtube.com/embed/fZzswQaICfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 5vw;">
+                    <button style=" background-color: #42573f; margin-bottom: 5vw;" class="custom-btn btn-5"><a href="../PDF/LEGO.pdf" target="_blank" style="text-decoration: none;width: auto; height: auto;  color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-pdf-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+                    &nbsp;&nbsp;&nbsp;<button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Pages/Login.html" style="text-decoration: none;width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; SELECT <img src="../Icons/icons8-cursor-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+                    &nbsp;&nbsp;&nbsp;<span><button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Word/LEGO.docx" target="_blank" style="text-decoration: none; width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-microsoft-word-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button></span>
+                </div>
+            </section>
+            
+        </section>
+          
+         
+
+        <section>
+            <div class="parallax-four">
+                <div class="container " >
+                    <h3 style="text-align: center; margin-bottom: 50px; padding-top: 50px; color: #57443e; font-size: 30px; "> <strong> Sack Race <hr style="border: 2px #42573f solid; width: 230px; border-radius: 5px; "></strong></h3>
+                    
+                    <div class="row " style="background-color: #57443e; box-shadow: 15px 25px 30px rgba(0, 0, 0, 0.8); ">
+                    
+                
+                        <div class="col-md-6  ">
+                            <img src="../Images/sack-race.jpg" alt=""  width="100%" height="100%" style="border: solid 1px #57443e; margin-left: -15px; ">
+                        </div>
+                    
+                
+                        <div class="col-md-6  " style="  height: 40%;color: #7e904b;">
+                            <p style="font-family: sans-serif; font-size: 16px; text-align: center; " class="mb-3 mt-3 ">The sack race or potato sack race is a competitive game in which participants place both of their legs inside a sack or pillow case that reaches their waist or neck and hop forward from a starting point toward a finish line. The first person to cross the finish line is the winner of the race.
+                
+                                Possible rule changes that people make to the traditional game include using extra large sacks and running inside the bag; however, in some cases such activity may be viewed as cheating.
+                                
+                                Sack racing is traditionally seen as an activity for children, but people of any age can compete. In schools, the sack race often takes place on a Sports Day, along with numerous other events such as the egg and spoon race. It is also a frequent pastime at fairs, birthday parties, and picnics.
+                                The fastest 100 metres sack race is 25.96 seconds and was achieved by Christian Roberto López Rodríguez in Yuncos, Spain, on the 18th of November 2020.[1] Christian also holds the world record for the 200 metres sack race, he completed the distance in a time of 63.88 seconds on the 3rd of January 2021.
+                            </p>
+                        </div>
+                            
+                            
+                    
+                   
+                </div>
+                    </div>
+            </div>
+          </section>
+          
+          <section>
+              <div class="container-fluid " style="margin-top: 100px;" >
+              
+                  <div class="col-md-12" style="text-align: center;" >
+                    <h3 style="text-align: center; color: #57443e; font-size: 25px; margin-left :10px ;" class="mt-4">Sack Race Tutorial</h3>
+                    <hr style="border: 1px #42573f solid; width: 350px; border-radius: 5px; ">
+              </div>
+              <div class="container-fluid">
+                  <div class="col-md-12" style="text-align: center;" >
+                    <iframe width="430px" height="315" src="https://www.youtube.com/embed/A7XYZ__HL6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div style="text-align: center; margin-top: 5vw;">
+                <button style=" background-color: #42573f; margin-bottom: 5vw;" class="custom-btn btn-5"><a href="../PDF/LEGO.pdf" target="_blank" style="text-decoration: none;width: auto; height: auto;  color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-pdf-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+                &nbsp;&nbsp;&nbsp;<button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Pages/Login.html" style="text-decoration: none;width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; SELECT <img src="../Icons/icons8-cursor-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+                &nbsp;&nbsp;&nbsp;<span><button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Word/LEGO.docx" target="_blank" style="text-decoration: none; width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-microsoft-word-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button></span>
+            </div>
+          </section>
+        </div> 
+<!-- Footer-Section-1-Navbar-Start -->
+<footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4 class="text-center">About Us</h4>
+            <ul class="list-unstyled mt-3 text-center">
+              <li><a href="#"></a></li>
+              <li><a href="../Pages/Aboutus.html">Our Team</a></li>
+              <li><a href="../Pages/Contactus.html">Contact Us</a></li>
+              <li><a href="../Pages/Site-Map.html">Site Map</a></li>
+              <li><a href="../Pages/Review.html">Our Reviews</a></li>
+              <li><a href="../Pages/Login.html">Subscription</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column2-->
+          <div class="footer-pad">
+            <h4 class="text-center">Popular Pages</h4>
+            <ul class="list-unstyled mt-3 text-center">
+              <li><a href="../Pages/Kids-Indoor-Games.html">Only Kidz Zone</a></li>
+              <li><a href="../Pages/Men-Outdoor-Games.html">Men Overtime</a></li>
+              <li><a href="../Pages/Women-Outdoor-Games.html">Women In Sports</a></li>
+              <li><a href="../Pages/Family-Indoor-Games.html">Family Bonding</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column3-->
+          <div class="footer-pad">
+            <h4 class="text-center">Contact Us</h4>
+            <ul class="list-unstyled mt-3 text-center">
+                <li>Email Us:<a href="../Pages/Contactus.html"> picnicgames1@gmail.com</a></li>
+                <li>Address: <a href="../Pages/Contactus.html">Aptech,Garden Center, Karachi, Pakistan</a></li>
+                <li>Phone 1: <span style="color: #a2a787;">03112535653</span></li>
+                <li>Phone 2: <span style="color: #a2a787;">03342978455</span></li>
+                <li><a href="#"></a></li>
+                
+              </ul>
+          </div>
+        </div>
+        <div class="col-md-3" style="text-align: center;">
+            <h4 class="text-center">Follow Us</h4>
+            <ul class="social-network social-circle list-unstyled" >
+                <li><a href="https://www.facebook.com/Picnic-Games-103910875521398/" class="icoFacebook mt-3" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/picnicgames/" class="icoInstagram mt-3" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/PicnicGame" class="icoTwitter mt-3" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.pinterest.com/picnicgames/"  class="icoPinterest mt-3" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/picnic-games-94014322b/" class="icoLinkedin mt-3" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+               </ul>		
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 mt-2 copy">
+              <p class="text-center mt-3">&copy; Copyright 2021 - HKTech. Team Picnic-Games. All rights reserved.</p>
+          </div>
+      </div>
+    </div>
+    </div>
+</footer>
+<!-- Footer-Section-1-Navbar-End -->
+  <!-- Sticky-Buttons-Start -->
+<button id="rightbtn1"><a href="https://www.facebook.com/Picnic-Games-103910875521398/" target="_blank" style="text-decoration: none; color: white;" title="Facebook"><i class="fa fa-facebook"></i></a></button>
+<button id="rightbtn2"><a href="https://www.instagram.com/picnicgames/" target="_blank" style="text-decoration: none; color: white;" title="Instagram"><i class="fa fa-instagram"></i></a></button>
+<button id="rightbtn3"><a href="https://www.twitter.com/PicnicGame" target="_blank" style="text-decoration: none; color: white;" title="Twitter"><i class="fa fa-twitter"></i></a></button>
+<button id="rightbtn4"><a href="https://www.pinterest.com/picnicgames/" target="_blank" style="text-decoration: none; color: white;" title="Pinterest"><i class="fa fa-pinterest"></i></a></button>
+<button id="rightbtn5"><a href="https://www.linkedin.com/in/picnic-games-94014322b/" target="_blank" style="text-decoration: none; color: white;" title="Linkedin"><i class="fa fa-linkedin"></i></a></button>
+<!-- Sticky-Buttons-End -->
+</body>
+</html>

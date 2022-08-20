@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../Icons/favicon-16x16.png" type="image/png">
+    <title>Picnic-Games| Reviews</title>
+    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="stylesheet" href="../Style/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../Script/jquery.slim.min.js"></script>
+    <script src="../Script/popper.min.js"></script>
+    <script src="../Script/bootstrap.bundle.min.js"></script>
+    <script src="../Script/jquery.min.js"></script> 
+    <script src="../Script/Review.js"></script>
+
+    <style>
+header {
+	text-align: center;
+	padding-top: 3%;
+	font-family: Arial, Helvetica, sans-serif, cursive;
+	font-size: 20px;
+	display: block;
+    margin: 0 auto 0;
+    color: #42573f;
+}
+
+#body {
+	background-color: #a2a787;
+}
+
+#survey-form {
+	width: 100%;
+	max-width: 700px;
+	height: auto;
+	margin: 1.5% auto 0;
+	padding: 30px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	background: #42573f;
+	border-radius: 20px;
+}
+
+#description {
+	font-family: Arial, Helvetica, sans-serif, cursive;
+	font-size: 25px;
+	margin: 10px 0 0;
+}
+
+.form-group {
+	width: auto;
+	margin: 0 0 20px;
+}
+
+input,
+option,
+select,
+textarea,
+button {
+	font-family: Arial, Helvetica, sans-serif, cursive;
+	color: #a2a787;
+	font-weight: 400;
+}
+
+label {
+	width: 100%;
+	margin-bottom: 8px;
+	display: block;
+}
+
+.p-label {
+	width: 100%;
+	margin-bottom: 8px;
+	display: block;
+}
+
+input {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 46px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 15px;
+    border: 1px solid #7e904b;
+    border-radius: 25px;
+}
+
+select {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 46px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 15px;
+    border-width: 1px;
+    border-radius: 25px;
+}
+
+/* Chrome 28+ */
+@supports (-webkit-appearance:none) {
+	[type="radio"] {
+		width: 15px;
+		height: 15px;
+		display: inline-block;
+		margin: -3px 10px 0 0;
+        vertical-align: middle;
+        background-color: #7e904b;
+	}
+}
+
+/* Firefox (любой) */
+@-moz-document url-prefix() {
+	[type="radio"] {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		margin: -3px 10px 0 0;
+        vertical-align: middle;
+        background-color: #7e904b;
+	}
+}
+
+/* Internet Explorer 11+ */
+_:-ms-fullscreen,
+:root [type="radio"] {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin: -3px 10px 0 0;
+    vertical-align: middle;
+    background-color: #7e904b;
+}
+/* Chrome 28+ */
+@supports (-webkit-appearance:none) {
+	[type="checkbox"] {
+		width: 15px;
+		height: 15px;
+		display: inline-block;
+		margin: -3px 10px 0 0;
+        vertical-align: middle;
+        background-color: #7e904b;
+	}
+}
+
+/* Firefox (любой) */
+@-moz-document url-prefix() {
+	[type="checkbox"] {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		margin: -3px 10px 0 0;
+        vertical-align: middle;
+        background-color: #7e904b;
+	}
+}
+
+/* Internet Explorer 11+ */
+_:-ms-fullscreen,
+:root [type="checkbox"] {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin: -3px 10px 0 0;
+    vertical-align: middle;
+    background-color: #7e904b;
+}
+
+textarea {
+	min-height: 120px;
+	width: 100%;
+	padding: 0.6rem;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+#submit {
+	width: 100%;
+	background: #7e904b;
+	border-width: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 12px;
+	color: #fff;
+	font-size: 19px;
+}
+
+footer p {
+	text-align: center;
+	padding: 30px 0 20px;
+}
+    </style>
+</head>
+<body style="background-color: #a2a787;">
+    <!-- Header-Section-1-Start -->
+    <nav class="navbar navbar-expand-sm" style="background-color: #a2a787; height: 70px;">
+        <a class="navbar-brand" href="../index.html"><img src="../Images/WEB-LOGO.png" alt="Not Found" height="70px" width="200px"></a>
+        
+    </nav>
+    <!-- Header-Section-1-End -->
+    <!-- Header-Section-2-Navbar-Start -->
+    <nav class="navbar sticky-top navbar-expand-sm " style="background-color: #42573f;">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation" style="background-color: #57443e;">
+            <span style="height: 0.1%; color:#7e904b;" class="navbar-toggler-icon fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="height: 50px;">
+                <li class="nav-item active">
+                    <a class="nav-link mt-1" href="../index.html" style="color: #a2a787; margin-left: 6px;"><img src="../Icons/icons8-tent-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>Home</b></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-basket-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>CATEGORIES</b></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; width: 450px; background-color: #42573f;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                                    <ul style="list-style: none; text-align: center;">
+                                        <li><a href="../Pages/Indoor-Games.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Indoor<span style="color: #6b766b;">GAMES</span></h4></a></li>
+                                        <li><a href="../Pages/Kids-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Kids &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a href="../Pages/Men-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Men &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a href="../Pages/Women-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp; Women &nbsp;</a></li>
+                                        <li><a href="../Pages/Family-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Family&nbsp;&nbsp;&nbsp;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                                    <ul style="list-style: none; text-align: center;">
+                                            <li><a href="../Pages/Outdoor-Games.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Outdoor<span style="color: #6b766b;">GAMES</span></h4></a></li>
+                                            <li><a href="../Pages/Kids-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Kids &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                            <li><a href="../Pages/Men-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Men &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                            <li><a href="../Pages/Women-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp; Women &nbsp;</a></li>
+                                            <li><a href="../Pages/Family-Oudoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Family&nbsp;&nbsp;&nbsp;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                                    <ul style="list-style: none; text-align: center;">
+                                        <li><a href="../Pages/Picnic-Getaways.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Picnic<span style="color: #6b766b;">LIFE</span></h4></a></li>
+                                        <li><a href="../Pages/Indoor-Picnic.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Indoor&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a href="../Pages/Outdoor-Picnic.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Outdoor&nbsp;&nbsp;&nbsp;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-communication-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>CONTACT US</b></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; background-color: #42573f;">
+                        <a class="dropdown-item" href="../Pages/Contactus.html" target="_blank">Our Location</a>
+                        <a class="dropdown-item" href="../Pages/Contactus.html" target="_blank">Send A Message</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-group-40.png" alt="Not Found" id="nav-img4"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>ABOUT US</b></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; background-color: #42573f;">
+                        <a class="dropdown-item" href="../Pages/History.html">History</a>
+                        <a class="dropdown-item" href="../Pages/Aboutus.html">Our Team</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link mt-1" href="../Pages/Review.html" style="color: #a2a787; margin-left: 6px;"><img src="../Icons/icons8-review-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>REVIEWS</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header-Section-2-Navbar-End -->
+    <div id="body">
+		<header>
+            <h1 id="title">Customer Review Survey Form</h1>
+			<p id="description">Thank You For Taking Time to Help Us Improve Our Services</p>
+		</header>
+		<form action="#" id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label>
+				<input id="name" name="name" type="text" autocomplete="off" placeholder="Enter your name(1 word, Aa-Zz)"
+					pattern="^[A-Za-z]+$" required="">
+			</div>
+			<div class="form-group">
+				<label id="email-label" for="email">E-mail</label>
+				<input id="email" name="email" type="email" autocomplete="off" placeholder="Enter your e-mail" required="">
+			</div>
+			<div class="form-group">
+				<label id="number-label" for="number">Age (optional)</label>
+				<input id="number" name="age" type="number" placeholder="Age" pattern="^[0-9]{,3}" min="10" max="99">
+			</div>
+			<div class="form-group">
+				<p class="p-label">Would You Recommend PICNIC-GAMES To Your Friends?</p>
+				<label><input class="radios" type="radio" value="yes" name="radios" checked="">Yes</label>
+				<label><input class="radios" type="radio" value="probably" name="radios">Probably</label>
+				<label><input class="radios" type="radio" value="no" name="radios">No</label>
+			</div>
+			<div class="form-group">
+				<p class="p-label">How long Did Your Package take?</p>
+				<select id="dropdown" name="time">
+					<option disabled="" selected="" value="">Choose your order time</option>
+					<option value="1w">&#8804;1 week</option>
+					<option value="2w">&#8804;2 week</option>
+					<option value="3w">&#8804;3 week</option>
+					<option value="1m">~1 month</option>
+					<option value="1mmore">&gt;1 month</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p class="p-label">What Most Appealed To You about Our services?</p>
+				<label><input value="talk" type="checkbox" name="like">Communication</label>
+				<label><input value="speed" type="checkbox" name="like">Speed of work</label>
+				<label><input value="profi" type="checkbox" name="like">Proficiency</label>
+				<label><input value="details" type="checkbox" name="like">Attention to details</label>
+			</div>
+			<div class="form-group">
+				<p class="p-label">Any Comments or Suggestions?</p>
+				<textarea id="comments" class="textarea" name="comment"
+					placeholder="Enter your comment here..."></textarea>
+			</div>
+			<button onclick="myfunction()" id="submit" type="submit">Submit</button>
+		</form>
+    </div>
+    <!-- Footer-Section-1-Navbar-Start -->
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4 class="text-center">About Us</h4>
+                <ul class="list-unstyled mt-3 text-center">
+                  <li><a href="#"></a></li>
+                  <li><a href="../Pages/Aboutus.html">Our Team</a></li>
+                  <li><a href="../Pages/Contactus.html">Contact Us</a></li>
+                  <li><a href="../Pages/Site-Map.html">Site Map</a></li>
+                  <li><a href="../Pages/Review.html">Our Reviews</a></li>
+                  <li><a href="../Pages/Login.html">Subscription</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <!--Column2-->
+              <div class="footer-pad">
+                <h4 class="text-center">Popular Pages</h4>
+                <ul class="list-unstyled mt-3 text-center">
+                  <li><a href="../Pages/Kids-Indoor-Games.html">Only Kidz Zone</a></li>
+                  <li><a href="../Pages/Men-Outdoor-Games.html">Men Overtime</a></li>
+                  <li><a href="../Pages/Women-Outdoor-Games.html">Women In Sports</a></li>
+                  <li><a href="../Pages/Family-Indoor-Games.html">Family Bonding</a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <!--Column3-->
+              <div class="footer-pad">
+                <h4 class="text-center">Contact Us</h4>
+                <ul class="list-unstyled mt-3 text-center">
+                    <li>Email Us:<a href="../Pages/Contactus.html"> picnicgames1@gmail.com</a></li>
+                    <li>Address: <a href="../Pages/Contactus.html">Aptech,Garden Center, Karachi, Pakistan</a></li>
+                    <li>Phone 1: <span style="color: #a2a787;">03112535653</span></li>
+                    <li>Phone 2: <span style="color: #a2a787;">03342978455</span></li>
+                    <li><a href="#"></a></li>
+                    
+                  </ul>
+              </div>
+            </div>
+            <div class="col-md-3" style="text-align: center;">
+                <h4 class="text-center">Follow Us</h4>
+                <ul class="social-network social-circle list-unstyled" >
+                    <li><a href="https://www.facebook.com/Picnic-Games-103910875521398/" class="icoFacebook mt-3" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/picnicgames/" class="icoInstagram mt-3" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/PicnicGame" class="icoTwitter mt-3" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.pinterest.com/picnicgames/"  class="icoPinterest mt-3" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/picnic-games-94014322b/" class="icoLinkedin mt-3" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                   </ul>			
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 mt-2 copy">
+                  <p class="text-center mt-3">&copy; Copyright 2021 - HKTech. Team Picnic-Games. All rights reserved.</p>
+              </div>
+          </div>
+        </div>
+        </div>
+    </footer>
+    <!-- Footer-Section-1-Navbar-End -->
+      <!-- Sticky-Buttons-Start -->
+<button id="rightbtn1"><a href="https://www.facebook.com/Picnic-Games-103910875521398/" target="_blank" style="text-decoration: none; color: white;" title="Facebook"><i class="fa fa-facebook"></i></a></button>
+<button id="rightbtn2"><a href="https://www.instagram.com/picnicgames/" target="_blank" style="text-decoration: none; color: white;" title="Instagram"><i class="fa fa-instagram"></i></a></button>
+<button id="rightbtn3"><a href="https://www.twitter.com/PicnicGame" target="_blank" style="text-decoration: none; color: white;" title="Twitter"><i class="fa fa-twitter"></i></a></button>
+<button id="rightbtn4"><a href="https://www.pinterest.com/picnicgames/" target="_blank" style="text-decoration: none; color: white;" title="Pinterest"><i class="fa fa-pinterest"></i></a></button>
+<button id="rightbtn5"><a href="https://www.linkedin.com/in/picnic-games-94014322b/" target="_blank" style="text-decoration: none; color: white;" title="Linkedin"><i class="fa fa-linkedin"></i></a></button>
+<!-- Sticky-Buttons-End -->
+</body>
+</html>

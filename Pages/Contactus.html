@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="../Icons/favicon-16x16.png" type="image/png">
+  <title>Picnic-Games| Contact Us</title>
+  <link rel="stylesheet" href="../Style/Style.css">
+  <link rel="stylesheet" href="../Style/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../Script/jquery.slim.min.js"></script>
+  <script src="../Script/popper.min.js"></script>
+  <script src="../Script/bootstrap.bundle.min.js"></script>
+  <script src="../Script/jquery.min.js"></script> 
+  <script src="../Script/Contact.js"></script>
+  <style>
+      @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #a2a787;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  width: 1000px;
+  border: solid 5px #a2a787;
+  max-width: auto;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 5px;
+}
+
+h1 {
+  color: #7e904b;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #a2a787;
+  margin: -0.512em auto;
+  width: 350px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #a2a787;
+	color: #7e904b;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 35%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 50px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #7e904b;
+}
+
+:-moz-placeholder { 
+	color: #7e904b;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #7e904b;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #7e904b;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #a2a787;
+  color: #7e904b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-weight: bold;
+  outline: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #a2a787;
+  color: #7e904b;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.7em;
+  }
+}
+  </style>
+</head>
+<!-- Header-Section-1-Start -->
+<nav class="navbar navbar-expand-sm" style="background-color: #a2a787; height: 70px;">
+  <a class="navbar-brand" href="../index.html"><img src="../Images/WEB-LOGO.png" alt="Not Found" height="70px" width="200px"></a>
+  
+</nav>
+<!-- Header-Section-1-End -->
+<!-- Header-Section-2-Navbar-Start -->
+<nav class="navbar sticky-top navbar-expand-sm " style="background-color: #42573f;">
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation" style="background-color: #57443e;">
+      <span style="height: 0.1%; color:#7e904b;" class="navbar-toggler-icon fa fa-bars"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="height: 50px;">
+          <li class="nav-item active">
+              <a class="nav-link mt-1" href="../index.html" style="color: #a2a787; margin-left: 6px;"><img src="../Icons/icons8-tent-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>Home</b></a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-basket-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>CATEGORIES</b></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; width: 450px; background-color: #42573f;">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                              <ul style="list-style: none; text-align: center;">
+                                  <li><a href="../Pages/Indoor-Games.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Indoor<span style="color: #6b766b;">GAMES</span></h4></a></li>
+                                  <li><a href="../Pages/Kids-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Kids &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                  <li><a href="../Pages/Men-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Men &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                  <li><a href="../Pages/Women-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp; Women &nbsp;</a></li>
+                                  <li><a href="../Pages/Family-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Family&nbsp;&nbsp;&nbsp;</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                              <ul style="list-style: none; text-align: center;">
+                                      <li><a href="../Pages/Outdoor-Games.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Outdoor<span style="color: #6b766b;">GAMES</span></h4></a></li>
+                                      <li><a href="../Pages/Kids-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Kids &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                      <li><a href="../Pages/Men-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Men &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                      <li><a href="../Pages/Women-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp; Women &nbsp;</a></li>
+                                      <li><a href="../Pages/Family-Oudoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Family&nbsp;&nbsp;&nbsp;</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                              <ul style="list-style: none; text-align: center;">
+                                  <li><a href="../Pages/Picnic-Getaways.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Picnic<span style="color: #6b766b;">LIFE</span></h4></a></li>
+                                  <li><a href="../Pages/Indoor-Picnic.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Indoor&nbsp;&nbsp;&nbsp;</a></li>
+                                  <li><a href="../Pages/Outdoor-Picnic.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Outdoor&nbsp;&nbsp;&nbsp;</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-communication-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>CONTACT US</b></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; background-color: #42573f;">
+                  <a class="dropdown-item" href="../Pages/Contactus.html" target="_blank">Our Location</a>
+                  <a class="dropdown-item" href="../Pages/Contactus.html" target="_blank">Send A Message</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-group-40.png" alt="Not Found" id="nav-img4"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>ABOUT US</b></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; background-color: #42573f;">
+                  <a class="dropdown-item" href="../Pages/History.html">History</a>
+                  <a class="dropdown-item" href="../Pages/Aboutus.html">Our Team</a>
+              </div>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link mt-1" href="../Pages/Review.html" style="color: #a2a787; margin-left: 6px;"><img src="../Icons/icons8-review-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>REVIEWS</b></a>
+          </li>
+      </ul>
+  </div>
+</nav>
+<!-- Header-Section-2-Navbar-End -->
+<body style="background-color: #a2a787;">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6" id="container" style="font-size: 20px; background-image: url(../Images/Bg-Contact-Us-unsplash.jpg);" >
+    <br>
+    <h1 style="margin-bottom: 30px;">&bull; Contact PICNIC-GAMES &bull;</h1>
+    <div class="underline">
+    </div>
+    <div class="icon_wrapper">
+    </div>
+    <form action="#" method="post" id="contact_form">
+      <div class="name">
+        <label for="name"></label>
+        <input type="text" placeholder="enter name" name="name" autocomplete="off" id="name_input" required>
+      </div>
+      <div class="email">
+        <label for="email"></label>
+        <input type="email" placeholder="enter e-mail" name="email" autocomplete="off" id="email_input" required>
+      </div>
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="enter number" name="telephone" autocomplete="off" id="telephone_input" required>
+      </div>
+      <div class="subject">
+        <label for="subject"></label>
+        <select placeholder="Subject line" name="subject" id="subject_input">
+          <option disabled hidden selected>Subject line</option>
+          <option>I'd like to start a Subscription</option>
+          <option>I'd like to ask a Question</option>
+          <option>I'd like to make a Suggestion</option>
+        </select>
+      </div>
+      <div class="message">
+        <label for="message"></label>
+        <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5"></textarea>
+      </div>
+      <div class="submit">
+        <button type="submit" onclick="myfunction()" value="Send Message" id="form_button">SEND MESSAGE</button>
+      </div>
+      <br>
+      <div style="text-align: center;"><p id="validationid"></p></div>
+    </form>
+    </div>
+    
+    <div class="col-md-6" style="height: 653px; width: 1000px; margin-top: 60px;">
+      
+      <iframe  width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=100%&amp;hl=en&amp;q=aptech%20garden%20center+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="http://www.gps.ie/">gps systems</a></iframe>
+    </div>
+  </div>
+  </div>
+  <!-- // End #container -->
+  <!-- Footer-Section-1-Navbar-Start -->
+  <footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4 class="text-center">About Us</h4>
+            <ul class="list-unstyled mt-3 text-center">
+              <li><a href="#"></a></li>
+              <li><a href="../Pages/Aboutus.html">Our Team</a></li>
+              <li><a href="../Pages/Contactus.html">Contact Us</a></li>
+              <li><a href="../Pages/Site-Map.html">Site Map</a></li>
+              <li><a href="../Pages/Review.html">Our Reviews</a></li>
+              <li><a href="../Pages/Login.html">Subscription</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column2-->
+          <div class="footer-pad">
+            <h4 class="text-center">Popular Pages</h4>
+            <ul class="list-unstyled mt-3 text-center">
+              <li><a href="../Pages/Kids-Indoor-Games.html">Only Kidz Zone</a></li>
+              <li><a href="../Pages/Men-Outdoor-Games.html">Men Overtime</a></li>
+              <li><a href="../Pages/Women-Outdoor-Games.html">Women In Sports</a></li>
+              <li><a href="../Pages/Family-Indoor-Games.html">Family Bonding</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column3-->
+          <div class="footer-pad">
+            <h4 class="text-center">Contact Us</h4>
+            <ul class="list-unstyled mt-3 text-center">
+              <li>Email Us:<a href="../Pages/Contactus.html"> picnicgames1@gmail.com</a></li>
+              <li>Address: <a href="../Pages/Contactus.html">Aptech,Garden Center, Karachi, Pakistan</a></li>
+              <li>Phone 1: <span style="color: #a2a787;">03112535653</span></li>
+              <li>Phone 2: <span style="color: #a2a787;">03342978455</span></li>
+              <li><a href="#"></a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3" style="text-align: center;">
+            <h4 class="text-center">Follow Us</h4>
+            <ul class="social-network social-circle list-unstyled" >
+              <li><a href="https://www.facebook.com/Picnic-Games-103910875521398/" class="icoFacebook mt-3" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/picnicgames/" class="icoInstagram mt-3" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/PicnicGame" class="icoTwitter mt-3" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.pinterest.com/picnicgames/"  class="icoPinterest mt-3" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/picnic-games-94014322b/" class="icoLinkedin mt-3" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+             </ul>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 mt-2 copy">
+              <p class="text-center mt-3">&copy; Copyright 2021 - HKTech. Team Picnic-Games. All rights reserved.</p>
+          </div>
+      </div>
+    </div>
+    </div>
+</footer>
+<!-- Footer-Section-1-Navbar-End -->
+ <!-- Sticky-Buttons-Start -->
+ <button id="rightbtn1"><a href="https://www.facebook.com/Picnic-Games-103910875521398/" target="_blank" style="text-decoration: none; color: white;" title="Facebook"><i class="fa fa-facebook"></i></a></button>
+ <button id="rightbtn2"><a href="https://www.instagram.com/picnicgames/" target="_blank" style="text-decoration: none; color: white;" title="Instagram"><i class="fa fa-instagram"></i></a></button>
+ <button id="rightbtn3"><a href="https://www.twitter.com/PicnicGame" target="_blank" style="text-decoration: none; color: white;" title="Twitter"><i class="fa fa-twitter"></i></a></button>
+ <button id="rightbtn4"><a href="https://www.pinterest.com/picnicgames/" target="_blank" style="text-decoration: none; color: white;" title="Pinterest"><i class="fa fa-pinterest"></i></a></button>
+ <button id="rightbtn5"><a href="https://www.linkedin.com/in/picnic-games-94014322b/" target="_blank" style="text-decoration: none; color: white;" title="Linkedin"><i class="fa fa-linkedin"></i></a></button>
+ <!-- Sticky-Buttons-End -->
+</body>
+</html>

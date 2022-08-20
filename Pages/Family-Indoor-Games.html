@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="../Icons/favicon-16x16.png" type="image/png">
+  <title>Picnic-Games| Family Indoor Games</title>
+  <link rel="stylesheet" href="../Style/Style.css"> 
+  <link rel="stylesheet" href="../Style/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../Script/jquery.slim.min.js"></script>
+  <script src="../Script/popper.min.js"></script>
+  <script src="../Script/bootstrap.bundle.min.js"></script>
+  <script src="../Script/jquery.min.js"></script>
+  <style>
+    #parallax {
+  background-image: url('../Images/Parallax-Family-1-unsplash.jpg');
+  background-color: black;
+  background-attachment: fixed;
+  background-position-y: -0.2;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#parallax2 {
+  background-image: url('../Images/Parallax-Family-2-unsplash.jpg');
+  background-color: black;
+  background-attachment: fixed;
+  background-position-y: -0.2;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#parallax3 {
+  background-image: url('../Images/Parallax-Family-3-unsplash.jpg');
+  background-color: black;
+  background-attachment: fixed;
+  background-position-y: -0.2;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#parallax4 {
+  background-image: url('../Images/Parallax-Family-4-unsplash.jpg');
+  background-color: black;
+  background-attachment: fixed;
+  background-position-y: -0.2;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+section {
+  text-align: center;
+  color: white;
+  transition: 0s linear;
+  transition-property: background-position;
+  height: 500px;
+}
+
+#two {
+  background-color: #57443e;
+  height: auto;
+}
+
+#three {
+  background-color: #a2a787;
+  height: auto;
+}
+
+#four {
+  background-color: #57443e;
+  height: auto;
+}
+
+#five {
+  background-color: #a2a787;
+  height: auto;
+}
+#section-container {
+  padding-top: 10%
+}
+  </style>
+  <script>
+    $(document).ready(function () {
+  
+  //init scrolling parallax
+  $(window).scroll(function(e){
+      var scrolled = $(window).scrollTop();
+      if(scrolled < 750){
+          parallax()
+      }
+  });
+
+  //define parallax function
+  function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('#parallax').css('background-positionY',(scrolled * -0.5)+'px');
+  };
+  
+});
+  </script>
+</head>
+<body style="background-color: #a2a787;">
+  <!-- Header-Section-1-Start -->
+  <nav class="navbar navbar-expand-sm" style="background-color: #a2a787; height: 70px;">
+    <a class="navbar-brand" href="../index.html"><img src="../Images/WEB-LOGO.png" alt="Not Found" height="70px" width="200px"></a>
+    
+</nav>
+<!-- Header-Section-1-End -->
+<!-- Header-Section-2-Navbar-Start -->
+<nav class="navbar sticky-top navbar-expand-sm " style="background-color: #42573f;">
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation" style="background-color: #57443e;">
+        <span style="height: 0.1%; color:#7e904b;" class="navbar-toggler-icon fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="height: 50px;">
+            <li class="nav-item active">
+                <a class="nav-link mt-1" href="../index.html" style="color: #a2a787; margin-left: 6px;"><img src="../Icons/icons8-tent-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>Home</b></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-basket-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>CATEGORIES</b></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; width: 450px; background-color: #42573f;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                                <ul style="list-style: none; text-align: center;">
+                                    <li><a href="../Pages/Indoor-Games.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Indoor<span style="color: #6b766b;">GAMES</span></h4></a></li>
+                                    <li><a href="../Pages/Kids-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Kids &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                    <li><a href="../Pages/Men-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Men &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                    <li><a href="../Pages/Women-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp; Women &nbsp;</a></li>
+                                    <li><a href="../Pages/Family-Indoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Family&nbsp;&nbsp;&nbsp;</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                                <ul style="list-style: none; text-align: center;">
+                                        <li><a href="../Pages/Outdoor-Games.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Outdoor<span style="color: #6b766b;">GAMES</span></h4></a></li>
+                                        <li><a href="../Pages/Kids-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Kids &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a href="../Pages/Men-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;&nbsp; Men &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                        <li><a href="../Pages/Women-Outdoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp; Women &nbsp;</a></li>
+                                        <li><a href="../Pages/Family-Oudoor-Games.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Family&nbsp;&nbsp;&nbsp;</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4" style="margin-right: 2vw; margin-left: -2vw;">
+                                <ul style="list-style: none; text-align: center;">
+                                    <li><a href="../Pages/Picnic-Getaways.html" style="text-decoration: none; color: #a2a787;"><h4 style="font-size: 15px; color: black;">Picnic<span style="color: #6b766b;">LIFE</span></h4></a></li>
+                                    <li><a href="../Pages/Indoor-Picnic.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Indoor&nbsp;&nbsp;&nbsp;</a></li>
+                                    <li><a href="../Pages/Outdoor-Picnic.html" style="text-decoration: none; color: #a2a787;">&nbsp;&nbsp;&nbsp;Outdoor&nbsp;&nbsp;&nbsp;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-communication-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>CONTACT US</b></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; background-color: #42573f;">
+                    <a class="dropdown-item" href="../Pages/Contactus.html" target="_blank">Our Location</a>
+                    <a class="dropdown-item" href="../Pages/Contactus.html" target="_blank">Send A Message</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mt-1" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #a2a787; margin-left: 9px;"><img src="../Icons/icons8-group-40.png" alt="Not Found" id="nav-img4"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>ABOUT US</b></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-left: 8px; background-color: #42573f;">
+                    <a class="dropdown-item" href="../Pages/History.html">History</a>
+                    <a class="dropdown-item" href="../Pages/Aboutus.html">Our Team</a>
+                </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link mt-1" href="../Pages/Review.html" style="color: #a2a787; margin-left: 6px;"><img src="../Icons/icons8-review-40.png" alt="Not Found" id="nav-img"><span id="topicid">&nbsp;&nbsp;PICNIC GAMES&nbsp;&nbsp;|&nbsp;</span> <b>REVIEWS</b></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Header-Section-2-Navbar-End -->
+<body>
+  <!-- first section with parallax scroll -->
+  <section id="parallax">
+      <div class="container" id="section-container">
+        <h1 style="text-align: center; color: #a2a787; margin-top: 5vw;">Family Indoor Games</h1>
+        <hr style="border: 2px #57443e solid; width: 420px; margin-bottom: 50px;">
+      </div>
+  </section>
+ <!-- second section -->
+  <section id="two">
+      <div class="container" id="section-container">
+    <!-- First indoor game head -->
+    <div class="container ">
+        <h3 style="text-align: center; margin-bottom: 50px; margin-top: -5vw; color: #a2a787;">Board Games <hr style="border: 1px #7e904b solid; width: 200px; border-radius: 5px; "></h3>
+        
+        <div class="row">
+            <!-- Fist indoor game img -->
+            <div class="col-md-6 shadow p-1 mb-3  rounded" style="background-color: #7e904b; height: 430px;">
+            <img src="../Images/Board-Games-Family-Indoor-unsplash.jpg" alt="Not Found" width="100%" height="100%" style="border: solid 1px #7e904b; ">
+        </div>
+       
+            <div class="col-md-6" style="border: #7e904b 3px solid; height: 40%">
+                
+                <!-- Fist indoor game detail -->
+            <p style="font-family: sans-serif; text-align: center; color: #a2a787;" class="mb-3">Board games are tabletop games that typically use pieces moved or placed on a pre-marked board (playing surface) and often include elements of table, card, role-playing, and miniatures games as well.
+
+                Most feature a competition between two or more players. In checkers, a player wins by capturing all opposing pieces, while Eurogames often end with a calculation of final scores. Pandemic is a cooperative game where players all win or lose as a team, and peg solitaire is a puzzle for one person.
+                
+                There are many varieties of board games. Their representation of real-life situations can range from having no inherent theme, such as checkers, to having a specific theme and narrative, such as Cluedo. Rules can range from the very simple, such as in Snakes and Ladders; to deeply complex, as in Advanced Squad Leader. Many games require some level of both skill and luck. A player may be hampered by bad luck in backgammon, Monopoly, or Risk; but over many games a skilled player will win more often.[41] The elements of luck can also make for more excitement at times, and allow for more diverse and multifaceted strategies, as concepts such as expected value and risk management.
+            </p>
+        </div> 
+    </div>
+        </div>
+        <!-- First indoor game video -->
+        <div class="container-fluid ">
+            
+            <div class="col-md-12" style="text-align: center;" >
+                <h3 style="text-align: center; color: #a2a787;" class="mt-4">Board Games Tutorial <hr style="border: 1px #7e904b solid; width: 320px; border-radius: 5px; "></h3>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="col-md-12" style="text-align: center;" >
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/uMdylyrST6w?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+      <button style=" background-color: #42573f; margin-top: 2vw; margin-bottom: 5vw;" class="custom-btn btn-5"><a href="../PDF/LEGO.pdf" target="_blank" style="text-decoration: none;width: auto; height: auto;  color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-pdf-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+      &nbsp;&nbsp;&nbsp;<button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Pages/Login.html" style="text-decoration: none;width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; SELECT <img src="../Icons/icons8-cursor-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+      &nbsp;&nbsp;&nbsp;<span><button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Word/LEGO.docx" target="_blank" style="text-decoration: none; width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-microsoft-word-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button></span>
+  </section>
+  <!-- Second section with parallax scroll -->
+  <section id="parallax2">
+    <div class="container" id="section-container">
+    </div>
+  </section>
+  <!-- third section -->
+  <section id="three">
+      <div class="container" id="section-container">
+        <!-- second indoor game img -->
+        <div class="container ">
+          <h3 style="text-align: center; margin-bottom: 50px; margin-top: -5vw; color: #42573f;">Tambola <hr style="border: 1px #7e904b solid; width: 130px; border-radius: 5px; "></h3>
+          
+          <div class="row">
+             
+             
+         
+              <div class="col-md-6  " style="border: #7e904b 3px solid; height: 40%">
+                  <p style="font-family: sans-serif; text-align: center; color: #42573f;" class="mb-3">
+                    Tambola is a game of probability in which players mark off numbers on cards as the numbers are drawn randomly by a caller, the winner being the first person to mark off all their numbers.
+                    In India, it is known as Tambola. The game is presided over by a caller, whose job it is to call out the numbers and validate winning tickets. They will announce the prize or prizes for each game before starting. The caller will then usually say "Eyes down" to indicate that they are about to start. They then begin to call numbers as they are randomly selected, either by an electronic random number generator (RNG), by drawing counters from a bag or by using balls in a mechanical draw machine. Calling may take the format of simple repetition in the framework, "Both the fives, fifty five", or "Two and three, twenty three", but some numbers have special calls due to their significance. In some independent clubs, numbers ending in a zero are described as 'blind'. So for example, thirty would be called as 'three-o blind 30' The use of blind numbers is generally restricted to independent bingo clubs, as it is not common practice in either of the largest chains of bingo club operators, Gala and Mecca bingo.
+                  </p>
+              </div>
+                  
+                  
+            
+          <div class="col-md-6 shadow p-1 mb-3 rounded" style="background-color: #7e904b; height: 430px;">
+              <img src="../Images/Tambola-Family-Indoor-unsplash.jpg" alt="Not Found" width="100%" height="100%" style="border: solid 1px #7e904b; ">
+          </div>
+      </div>
+          </div>
+          <!-- second indoor game video -->
+          <div class="container-fluid " style="margin-top: 2vw" >
+          
+              <div class="col-md-12" style="text-align: center; color: #42573f;" >
+                  <h3 style="text-align: center;" class="mt-4">Tambola Tutorial <hr style="border: 1px #7e904b solid; width: 250px; border-radius: 5px; color: #a2a787;"></h3>
+              </div>
+          </div>
+          <div class="container-fluid">
+              <div class="col-md-12" style="text-align: center;" >
+                <iframe width="430px" height="315" src="https://www.youtube.com/embed/daxRy9-bht0?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+      <button style=" background-color: #42573f; margin-top: 2vw; margin-bottom: 5vw;" class="custom-btn btn-5"><a href="../PDF/LEGO.pdf" target="_blank" style="text-decoration: none;width: auto; height: auto;  color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-pdf-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+      &nbsp;&nbsp;&nbsp;<button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Pages/Login.html" style="text-decoration: none;width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; SELECT <img src="../Icons/icons8-cursor-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+      &nbsp;&nbsp;&nbsp;<span><button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Word/LEGO.docx" target="_blank" style="text-decoration: none; width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-microsoft-word-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button></span>
+  </section>
+  <!-- Third section with parallax scroll -->
+  <section id="parallax3">
+    <div class="container" id="section-container">
+    </div>
+  </section>
+  <section id="four">
+    <div class="container" id="section-container">
+      <!-- Third indoor game img -->
+      <div class="container ">
+        <h3 style="text-align: center; margin-bottom: 50px; margin-top: -5vw; color: #a2a787;">Carrom <hr style="border: 1px #7e904b solid; width: 150px; border-radius: 5px; "></h3>
+        
+        <div class="row">
+            <!-- Fist indoor game img -->
+            <div class="col-md-6 shadow p-1 mb-3 rounded" style="background-color: #7e904b; height: 407px;">
+            <img src="../Images/Carrom-Family-Indoor-unsplash.jpg" alt="Not Found" width="100%" height="100%" style="border: solid 1px #7e904b; ">
+        </div>
+       
+            <div class="col-md-6" style="border: #7e904b 3px solid; height: 40%">
+                
+                <!-- Fist indoor game detail -->
+                <p style="font-family: sans-serif; text-align: center; color: #a2a787;" class="mb-3"> 
+                    Carrom is a tabletop game of Indian origin. The game is very popular in Afghanistan and in the Indian subcontinent, and is known by various names in different languages. In South Asia, many clubs and cafés hold regular tournaments. Carrom is very commonly played by families, including children, and at social functions. Carrom is not a patented game. It is in the public domain. Different standards and rules exist in different areas. It became very popular in the United Kingdom and the Commonwealth during the early 20th century. Carrom is played using small disks of wood or plastic known as carrom men (sometimes abbreviated CM, c.m. c/m, etc.). These pieces, aside from the special queen, may also be known as seeds, coins, pawns (as in chess), or pucks. Carrom men are designed to slide when struck and are made with a smooth surface that slides easily when laid flat on the board. They are struck by a Striker of a standard specification which is larger and heavier. Carrom follows similar "strike and pocket" games, like pool, with its use of rebounds, angles, and obstruction of opponent's carrom pieces.
+                </p>
+        </div> 
+    </div>
+        </div>
+<!-- third indoor game video -->
+  <div class="container-fluid " style="margin-top: 2vw;" >
+      <div class="col-md-12" style="text-align: center;" >
+      <h3 style="text-align: center; color: #a2a787;" class="mt-4">Carrom Tutorial <hr style="border: 1px #7e904b solid; width: 250px; border-radius: 5px; "></h3>
+    </div>
+  </div>
+    <div class="container-fluid">
+      <div class="col-md-12" style="text-align: center;" >
+        <iframe width="430px" height="315" src="https://www.youtube.com/embed/R0inyabgB-Y?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <button style=" background-color: #42573f; margin-top: 2vw; margin-bottom: 5vw;" class="custom-btn btn-5"><a href="../PDF/LEGO.pdf" target="_blank" style="text-decoration: none;width: auto; height: auto;  color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-pdf-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+  &nbsp;&nbsp;&nbsp;<button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Pages/Login.html" style="text-decoration: none;width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; SELECT <img src="../Icons/icons8-cursor-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+  &nbsp;&nbsp;&nbsp;<span><button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Word/LEGO.docx" target="_blank" style="text-decoration: none; width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-microsoft-word-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button></span>
+  </section>
+  <!-- Fourth section with parallax scroll -->
+  <section id="parallax4">
+    <div class="container" id="section-container">
+    </div>
+  </section>
+  <section id="five">
+    <div class="container ">
+      <h3 style="text-align: center; margin-bottom: 50px; padding-top: 50px; color: #42573f;">Treasure Hunt<hr style="border: 1px #7e904b solid; width: 200px; border-radius: 5px; "></h3>
+      
+      <div class="row">
+         
+         
+     
+          <div class="col-md-6" style="color: #42573f; font-family: sans-serif; text-align: center; border: #7e904b 3px solid; height: 40%" >
+              <p  class="mb-3">
+                A scavenger hunt is a game in which the organizers prepare a list defining specific items, which the participants seek to gather or complete all items on the list, usually without purchasing them. Usually participants work in small teams, although the rules may allow individuals to participate. The goal is to be the first to complete the list or to complete the most items on that list. In variations of the game, players take photographs of listed items or be challenged to complete the tasks on the list in the most creative manner. A treasure hunt is another name for the game, but it may involve following a series of clues to find objects or a single prize in a particular order.
+
+According to game scholar Markus Montola, scavenger hunts evolved from ancient folk games. Gossip columnist Elsa Maxwell popularized scavenger hunts in the United States with a series of exclusive New York parties starting in the early 1930s. The scavenger-hunt craze among New York's elite was satirized in the 1936 film My Man Godfrey.
+          </div>
+              
+              
+        
+      <div class="col-md-6 shadow p-1 mb-3 rounded" style="background-color: #7e904b; height: 357px;">
+          <img src="../Images/Treasure-Hunt-Family-Indoor-unsplash.jpg" alt="Not Found" width="100%" height="100%" style="border: solid 1px #7e904b; ">
+      </div>
+  </div>
+      </div>
+ 
+      </div>
+      <!-- fifth indoor game video -->
+      <div class="container-fluid "  >
+
+          <div class="col-md-12" style="text-align: center;" >
+              <h3 style="text-align: center; color: #42573f;" class="mt-4">Treasure Hunt Tutorial <hr style="border: 1px #7e904b solid; width: 300px; border-radius: 5px; "></h3>
+          </div>
+      </div>
+      <div class="container-fluid">
+          <div class="col-md-12" style="text-align: center;" >
+            <iframewidth="430px" height="315" src="https://www.youtube.com/embed/jqZxDQ4zQ5k?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+      <button style=" background-color: #42573f; margin-top: 2vw;" class="custom-btn btn-5"><a href="../PDF/LEGO.pdf" target="_blank" style="text-decoration: none;width: auto; height: auto;  color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-pdf-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+      &nbsp;&nbsp;&nbsp;<button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Pages/Login.html" style="text-decoration: none;width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; SELECT <img src="../Icons/icons8-cursor-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button>
+      &nbsp;&nbsp;&nbsp;<span><button style="background-color: #42573f;" class="custom-btn btn-5"><a href="../Word/LEGO.docx" target="_blank" style="text-decoration: none; width: auto; height: auto; color: #a2a787; font-family: sans-serif;">&nbsp;&nbsp; DOWNLOAD <span><img src="../Icons/icons8-microsoft-word-30.png" alt="Not Found"></span></a>&nbsp;&nbsp;</button></span>
+  </section>
+<!-- Footer-Section-1-Navbar-Start -->
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4 class="text-center">About Us</h4>
+          <ul class="list-unstyled mt-3 text-center">
+            <li><a href="#"></a></li>
+            <li><a href="../Pages/Aboutus.html">Our Team</a></li>
+            <li><a href="../Pages/Contactus.html">Contact Us</a></li>
+            <li><a href="../Pages/Site-Map.html">Site Map</a></li>
+            <li><a href="../Pages/Review.html">Our Reviews</a></li>
+            <li><a href="../Pages/Login.html">Subscription</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column2-->
+        <div class="footer-pad">
+          <h4 class="text-center">Popular Pages</h4>
+          <ul class="list-unstyled mt-3 text-center">
+            <li><a href="../Pages/Kids-Indoor-Games.html">Only Kidz Zone</a></li>
+            <li><a href="../Pages/Men-Outdoor-Games.html">Men Overtime</a></li>
+            <li><a href="../Pages/Women-Outdoor-Games.html">Women In Sports</a></li>
+            <li><a href="../Pages/Family-Indoor-Games.html">Family Bonding</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column3-->
+        <div class="footer-pad">
+          <h4 class="text-center">Contact Us</h4>
+          <ul class="list-unstyled mt-3 text-center">
+            <li>Email Us:<a href="../Pages/Contactus.html"> picnicgames1@gmail.com</a></li>
+            <li>Address: <a href="../Pages/Contactus.html">Aptech,Garden Center, Karachi, Pakistan</a></li>
+            <li>Phone 1: <span style="color: #a2a787;">03112535653</span></li>
+            <li>Phone 2: <span style="color: #a2a787;">03342978455</span></li>
+            <li><a href="#"></a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3" style="text-align: center;">
+          <h4 class="text-center">Follow Us</h4>
+          <ul class="social-network social-circle list-unstyled" >
+            <li><a href="https://www.facebook.com/Picnic-Games-103910875521398/" class="icoFacebook mt-3" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/picnicgames/" class="icoInstagram mt-3" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/PicnicGame" class="icoTwitter mt-3" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/picnicgames/"  class="icoPinterest mt-3" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/picnic-games-94014322b/" class="icoLinkedin mt-3" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+           </ul>			
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mt-2 copy">
+            <p class="text-center mt-3">&copy; Copyright 2021 - HKTech. Team Picnic-Games. All rights reserved.</p>
+        </div>
+    </div>
+  </div>
+  </div>
+</footer>
+<!-- Footer-Section-1-Navbar-End -->
+ <!-- Sticky-Buttons-Start -->
+ <button id="rightbtn1"><a href="https://www.facebook.com/Picnic-Games-103910875521398/" target="_blank" style="text-decoration: none; color: white;" title="Facebook"><i class="fa fa-facebook"></i></a></button>
+ <button id="rightbtn2"><a href="https://www.instagram.com/picnicgames/" target="_blank" style="text-decoration: none; color: white;" title="Instagram"><i class="fa fa-instagram"></i></a></button>
+ <button id="rightbtn3"><a href="https://www.twitter.com/PicnicGame" target="_blank" style="text-decoration: none; color: white;" title="Twitter"><i class="fa fa-twitter"></i></a></button>
+ <button id="rightbtn4"><a href="https://www.pinterest.com/picnicgames/" target="_blank" style="text-decoration: none; color: white;" title="Pinterest"><i class="fa fa-pinterest"></i></a></button>
+ <button id="rightbtn5"><a href="https://www.linkedin.com/in/picnic-games-94014322b/" target="_blank" style="text-decoration: none; color: white;" title="Linkedin"><i class="fa fa-linkedin"></i></a></button>
+ <!-- Sticky-Buttons-End -->
+</body>
+</html>
